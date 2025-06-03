@@ -1,10 +1,10 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { analyzeDescription, uploadResumePdf } from "../api";
 import TemplateSelector from "./TemplateSelector";
 import { useNavigate } from 'react-router-dom';
 
 
-export default function FreeformInput({ setStructuredData }) {
+export default function FreeformInput() {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
   const [listening, setListening] = useState(false);

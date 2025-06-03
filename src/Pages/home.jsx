@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import Result from "../components/Result";
+import { useState } from "react";
 import FreeformInput from "../components/FreeFormInput"; // 👈 Import it
 
 function Home() {
-  const [formData, setFormData] = useState({});
-  const [deployedURL, setDeployedURL] = useState(null);
 
   // 👇 Merge AI-generated data with existing form data
   const handleStructuredData = (structured) => {
@@ -21,8 +18,6 @@ function Home() {
       {/* 👇 Freeform AI Assistant */}
       <FreeformInput setStructuredData={handleStructuredData} />
 
-      {/* 👇 Deployment result */}
-      {deployedURL && <Result url={deployedURL} />}
     </div>
   );
 }
