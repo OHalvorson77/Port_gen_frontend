@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Port_gen_frontend/static/css/main.2a788db5.css",
+    "main.js": "/Port_gen_frontend/static/js/main.4b03b4e9.js",
+    "static/js/453.18da8450.chunk.js": "/Port_gen_frontend/static/js/453.18da8450.chunk.js",
+    "index.html": "/Port_gen_frontend/index.html",
+    "main.2a788db5.css.map": "/Port_gen_frontend/static/css/main.2a788db5.css.map",
+    "main.4b03b4e9.js.map": "/Port_gen_frontend/static/js/main.4b03b4e9.js.map",
+    "453.18da8450.chunk.js.map": "/Port_gen_frontend/static/js/453.18da8450.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a788db5.css",
+    "static/js/main.4b03b4e9.js"
+  ]
+}
