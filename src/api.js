@@ -1,5 +1,5 @@
 export async function generateSite(payload, template) {
-  const res = await fetch("http://localhost:3000/generate", {
+  const res = await fetch("https://portfolio-gen-backend-prod.onrender.com/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({siteData: payload, template:template}),
@@ -8,7 +8,7 @@ export async function generateSite(payload, template) {
 }
 
 export async function analyzeDescription(text) {
-  const res = await fetch("http://localhost:3000/api/analyze", {
+  const res = await fetch("https://portfolio-gen-backend-prod.onrender.com/api/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: text }),
@@ -21,7 +21,7 @@ export async function analyzeDescription(text) {
 }
 
 export async function updateCode(text, code) {
-  const res = await fetch("http://localhost:3000/api/update", {
+  const res = await fetch("https://portfolio-gen-backend-prod.onrender.com/api/update", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: text, code:code }),
@@ -35,7 +35,7 @@ export async function updateCode(text, code) {
 
 // POST /upload-resume
 export async function uploadResumePdf(formData) {
-  const response = await fetch("http://localhost:3000/upload-resume", {
+  const response = await fetch("https://portfolio-gen-backend-prod.onrender.com/upload-resume", {
     method: "POST",
     body: formData,
   });
