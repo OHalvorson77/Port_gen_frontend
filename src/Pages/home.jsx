@@ -1,4 +1,3 @@
-import { useState } from "react";
 import FreeformInput from "../components/FreeFormInput"; // 👈 Import it
 
 function Home() {
